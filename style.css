@@ -101,7 +101,7 @@ table {
     text-transform: uppercase;
 }
 
-/* ✅ Media Query */
+
 @media (max-width: 768px) {
     .container {
         width: 100%;
