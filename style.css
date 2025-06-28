@@ -36,7 +36,6 @@ body {
 }
 .span::before {
     content: 'Total:';
-    
 }
 .input input {
     background-color: rgba(12, 12, 12, 0.82);
@@ -48,7 +47,6 @@ body {
     text-transform: uppercase;
     width: 100%;
     transition: .3s;
-    
 }
 .input input:focus {
     transform: scale(1.1);
@@ -56,9 +54,7 @@ body {
 }
 .num input{
     width: 20%;
-    
 }
-
 .btnc {
     width: 100%;
     padding: 7px;
@@ -72,25 +68,26 @@ body {
     cursor: pointer;
 }
 .btnc:hover {
-     background-color: rgb(89, 15, 159);
+    background-color: rgb(89, 15, 159);
 }
 .output {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .btn  {
-        width: 45%;
-        background-color: blueviolet;
-        padding: 7px;
-        transition: .3s;
-        color: white;
-        border: none;
-        border-radius: 10px;
-          margin: 10px;
-        cursor: pointer;
+    width: 45%;
+    background-color: blueviolet;
+    padding: 7px;
+    transition: .3s;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    margin: 10px;
+    cursor: pointer;
 }
-button:hover{
-       background-color: rgb(89, 15, 159);
+button:hover {
+    background-color: rgb(89, 15, 159);
 }
 table {
     width: 100%;
@@ -99,7 +96,41 @@ table {
     text-transform: uppercase;
     margin-top: 10px;
 }
-.btnd ,.btnu {
+.btnd, .btnu {
     width: 90%;
     text-transform: uppercase;
+}
+
+/* ✅ Media Query */
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .num input {
+        width: 48%;
+        margin-bottom: 10px;
+    }
+
+    .output {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+    .btnc {
+        font-size: 16px;
+    }
+
+    .input input {
+        font-size: 14px;
+    }
+
+    table {
+        font-size: 12px;
+    }
 }
