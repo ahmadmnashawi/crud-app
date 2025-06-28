@@ -1,0 +1,105 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+.container {
+    width: 800px;
+    margin: 20px auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+body {
+    background-color: #292828;
+}
+.container .header{
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+}
+.container .header h2 {
+    margin: 10px;
+}
+.container .header p {
+    margin: 5px;
+}
+.input  {
+    position: relative;
+}
+.span{
+    background: red;
+    color: white;
+    display: inline-block;
+    padding: 5px;
+    border-radius: 6px;
+}
+.span::before {
+    content: 'Total:';
+    
+}
+.input input {
+    background-color: rgba(12, 12, 12, 0.82);
+    color: white;
+    border: none;
+    padding: 7px;
+    margin:5px 5px;
+    border-radius: 6px;
+    text-transform: uppercase;
+    width: 100%;
+    transition: .3s;
+    
+}
+.input input:focus {
+    transform: scale(1.1);
+    outline: none;
+}
+.num input{
+    width: 20%;
+    
+}
+
+.btnc {
+    width: 100%;
+    padding: 7px;
+    border-radius: 10px;
+    margin: 10px;
+    background-color: blueviolet;
+    transition: .3s;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.btnc:hover {
+     background-color: rgb(89, 15, 159);
+}
+.output {
+    display: flex;
+    justify-content: space-between;
+}
+.btn  {
+        width: 45%;
+        background-color: blueviolet;
+        padding: 7px;
+        transition: .3s;
+        color: white;
+        border: none;
+        border-radius: 10px;
+          margin: 10px;
+        cursor: pointer;
+}
+button:hover{
+       background-color: rgb(89, 15, 159);
+}
+table {
+    width: 100%;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+.btnd ,.btnu {
+    width: 90%;
+    text-transform: uppercase;
+}
